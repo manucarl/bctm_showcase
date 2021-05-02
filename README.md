@@ -1,24 +1,29 @@
 # some things the BCTM can do
  
-###  [Leukemia Survival](leukemia)
+##  [Leukemia Survival](leukemia)
+**Proportional Hazards with Spatial Frailties**
+
 ![image](leukemia/leuk_ph.png)
 
 
-**Proportional Hazards with Spatial Frailties**
 Based on a dataset on acute myeloid leukemia survival ([[1]](#1)).
 
 * analyzing impact of prognostic factors *age*, *sex*, *white blood cell count*  and *Townsend score*(indicating less affluent residential areas for higher values), 
 * investigate spatial patterns for 24 administrative regions in North West England; . * reference is the minimum extreme value distribution resulting in a proportional hazards model
 
+---
 
-###  [Lung Cancer Survival](veteran)
-![image](veteran/vet_densities.pdf)
-
+##  [Lung Cancer Survival](veteran)
 **Semiparametric (Non-)Proportional Odds with Censoring**
+
+![image](veteran/vet_densities.png)
+
 Based on a Veteran’s Administration lung cancer trial dataset ([[2]](#2)).
 
-* analyzing impact of prognostic factors *age*, *sex*, *white blood cell count*  and *Townsend score*(indicating less affluent residential areas for higher values), 
-* investigate spatial patterns for 24 administrative regions in North West England; . * reference is the minimum extreme value distribution resulting in a proportional hazards model
+* analyzing odds of survival dependent on Karnofsky Performance Score and different lung cancer types
+* partial right-censoring
+
+---
 
 ## References
 <a id="1">[1]</a>
