@@ -3,4 +3,4 @@
 ## Illustrations:
 
 ###  [Proportional Hazards with Spatial Frailties using BCTM](leukemia)
-![image](leukemia/leuk_ph.pdf?raw=true)
+![image](leukemia/leuk_ph.pdf)
