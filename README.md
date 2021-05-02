@@ -20,11 +20,6 @@ Based on a dataset on acute myeloid leukemia survival ([[1]](#1)).
 
 Based on a Framingham Heart Study ([[2]](#2)).
 
-
----
-
-
-
 ---
 
 ##  [Lung Cancer Survival](veteran)
