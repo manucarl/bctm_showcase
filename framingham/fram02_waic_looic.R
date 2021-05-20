@@ -13,8 +13,6 @@
 
 library(dplyr)
 # rm(list = ls())
-path <- "D:/GitHub/bctm_paper/code/"
-setwd(path)
 
 source("bctm_utils.R")
 source("bctm_design_funs2.R")
@@ -23,7 +21,6 @@ source("bctm_fun.R")
 
 source("nuts/nuts_utils.R")
 source("nuts/nuts.R")
-source("nuts/adnuts_helper.R")
 
 packages <- c("Rcpp", "RcppArmadillo", "RcppEigen", "splines", "mgcv", "Matrix", "MCMCpack", 
               "tidyverse", "profvis",  "tictoc", "scales", "metR",

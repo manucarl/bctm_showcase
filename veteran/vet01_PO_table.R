@@ -13,8 +13,7 @@
 
 library(dplyr)
 # rm(list = ls())
-path <- "D:/GitHub/bctm_paper/code/"
-setwd(path)
+
 
 source("bctm_utils.R")
 source("bctm_design_funs2.R")
@@ -23,7 +22,6 @@ source("bctm_fun.R")
 
 source("nuts/nuts_utils.R")
 source("nuts/nuts.R")
-source("nuts/adnuts_helper.R")
 
 packages <- c("Rcpp", "RcppArmadillo", "RcppEigen", "splines", "mgcv", "Matrix", "MCMCpack", 
               "tidyverse", "profvis",  "tictoc", "scales", "metR", "caret",
@@ -113,5 +111,5 @@ table1
 # 3 small vs. large     1.47    0.51   1.46   0.533  1.36   0.527
 # 4 squamous vs. large -0.147   0.605 -0.188  0.598 -0.173  0.580
 
-xtable::xtable(table1, digits=3)
+#xtable::xtable(table1, digits=3)
  

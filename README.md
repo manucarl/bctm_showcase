@@ -1,4 +1,4 @@
-# some things the BCTM can do
+# Some things the BCTM can do as shown in the [paper](https://arxiv.org/abs/2012.11016)
  
 ##  [Leukemia Survival](leukemia)
 **Proportional Hazards with Spatial Frailties**
@@ -13,7 +13,7 @@ Based on a dataset on acute myeloid leukemia survival ([[1]](#1)).
 
 ---
 
-##  [Framingham Heart Study](veteran)
+##  [Framingham Heart Study](framingham)
 **Modelling Conditional Distribution of Cholesterol Levels for Heart Patients**
 
 ![image](framingham/fram_contours.png)

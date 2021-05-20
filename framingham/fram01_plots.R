@@ -12,9 +12,8 @@
 ## ---------------------------
 
 library(dplyr)
-# rm(list = ls())
-path <- "D:/GitHub/bctm_paper/code/"
-setwd(path)
+rm(list = ls())
+
 
 source("bctm_utils.R")
 source("bctm_design_funs2.R")
@@ -23,21 +22,15 @@ source("bctm_fun.R")
 
 source("nuts/nuts_utils.R")
 source("nuts/nuts.R")
-source("nuts/adnuts_helper.R")
 
 packages <- c("Rcpp", "RcppArmadillo", "RcppEigen", "splines", "mgcv", "Matrix", "MCMCpack", 
               "tidyverse", "profvis",  "tictoc", "scales", "metR",
               "doParallel", "scam", "mvtnorm", "MCMCpack", "mcmcplots")
 load_inst(packages)
 
-
-
-
-
 sourceCpp("rcpp/posterior_grad_xx2.cpp")
 
 data("Cholesterol", package="qrLMM")
-
 data <- Cholesterol
 
 # scale for better sampling
@@ -54,8 +47,9 @@ scale_pred <- function(x, var){
 
 
 ##########################################################################################################################################################
-# model 1 - varying coefficient for age -----------------------------------------------------------------------------------------------------------------------------
+# model 1 - varying coefficient for age ------------------------------------------------------------------------------------------------------------------
 ##########################################################################################################################################################
+
 object_vcm <- bctm(cholst ~  hy_sm(cholst, data=data) +
                      hyx_vcm(cholst, by=age, center=T, data=data, q=20, add_to_diag=10e-4) +
                      hx_lin(age) + hx_lin(sex) + hx_lin(year),

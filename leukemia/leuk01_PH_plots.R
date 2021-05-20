@@ -13,8 +13,6 @@
 ## ---------------------------
 library(dplyr)
 # rm(list = ls())
-path <- "D:/GitHub/bctm_paper/code/"
-setwd(path)
 
 source("bctm_utils.R")
 source("bctm_design_funs2.R")
@@ -23,7 +21,6 @@ source("bctm_fun.R")
 
 source("nuts/nuts_utils.R")
 source("nuts/nuts.R")
-source("nuts/adnuts_helper.R")
 
 packages <- c("spBayesSurv", "survival", "BayesX", "scam", "Matrix", "Rcpp", "RcppArmadillo", "MCMCpack", "sf", "rgeos", "ggplot2")
 load_inst(packages)
@@ -227,6 +224,6 @@ p2
 
 p <-cowplot::plot_grid(p1, p2, labels=c("A","B"), ncol=2)#+ panel_border(remove = TRUE, color="white")
 p
-ggsave("D:/GitHub/bctm_paper/manuscript/figs/leuk_ph.pdf", plot=p,height=3.5, width=9, units="in", bg = "transparent")
+# ggsave("D:/GitHub/bctm_paper/manuscript/figs/leuk_ph.pdf", plot=p,height=3.5, width=9, units="in", bg = "transparent")
 
 
