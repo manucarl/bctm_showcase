@@ -9,7 +9,7 @@
 Based on a dataset on acute myeloid leukemia survival ([[1]](#1)).
 
 * analyzing impact of prognostic factors *age*, *sex*, *white blood cell count*  and *Townsend score*(indicating less affluent residential areas for higher values), 
-* investigate spatial patterns for 24 administrative regions in North West England; . * reference is the minimum extreme value distribution resulting in a proportional hazards model
+* investigating spatial patterns for 24 administrative regions in North West England; . * reference is the minimum extreme value distribution resulting in a proportional hazards model
 
 ---
 
