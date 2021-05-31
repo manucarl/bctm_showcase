@@ -1,5 +1,6 @@
-# Some things the BCTM can do as shown in the [paper](https://arxiv.org/abs/2012.11016)
- 
+# Some things Bayesian Conditional Transformation Models (BCTMs) can do (as shown in the [paper](https://arxiv.org/abs/2012.11016))
+BCTMs are able to flexibly estimate the whole conditional distribution of the responses, i.e. a respone distribution does not have to be specified beforehand. The covariates impact (possibly) the whole conditional response distribution in form of linear, nonlinear, random or spatial effects on the scale of the transformation function. BCTMs perform posterior estimation on basis of the NUTS Sampler with mutlivariate Gaussian priors for the basis coefficients and with  gamma priors for the smoothing variances.
+
 ##  [Leukemia Survival](leukemia)
 **Proportional Hazards with Spatial Frailties**
 
